@@ -1,0 +1,223 @@
+    :root{
+    --whitegrad:linear-gradient(to left,#f1f9f8, #c1e9f9);
+    --snowgrad:linear-gradient(to left, #c7c7c7a9, #fffafa );
+    --blurgrad:linear-gradient(144deg, #8d89f366, #9dffdb66);
+    --blackgrad:linear-gradient(144deg, rgba(252, 250, 250, 0.361),rgba(185, 238, 255, 0.616));
+    --lightgrad: linear-gradient(to left,#bfefffaf,#f7f8f3,#bfefffaf);
+    --tranwhite: #f3f8f84e;
+    --black: #002c3e;
+    --hover: #282657a8;
+    --dark: #0f0d35;
+    --blue: #287094;
+    --white:#f0f4ff;
+}
+
+.banner{
+    width: 100%;
+    height: 93vh;
+    background-image: url("../images/cuspkku.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 55px;
+}
+.banner img{
+    width: 100%;
+}
+
+.h-text{
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blackgrad);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.edu{
+    display: inline-block;
+    opacity: 0;
+    animation: maintextanimation .8s ease-in 0.5s forwards ;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 5px var(--white);
+    color: var(--black);
+    -webkit-text-stroke: 0.3vw var(--black);
+    position: relative;
+}
+.text::before{
+    content: attr(data-text);
+    color:var(--white);
+    -webkit-text-stroke: 0vw var(--white);
+    position:absolute;
+    left:0; 
+    width:0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: textanimation 2.5s ease-in 1s ;
+    z-index: 6;
+}
+.lock{
+    display: inline-block;
+    opacity: 0;
+    animation: sectextanimation 2.5s ease-in 1s  forwards;
+}
+.banner .btn{
+    margin-top:30px;
+}
+.about-btn{
+    width: 113px;
+    height: 37px;
+    background: var(--dark);
+    color:var(--white);
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    animation: btnanimation .5s ease-out 1s  forwards;
+    opacity: 0;
+}
+.about-btn:hover{
+    background:var(--hover);
+}
+.btn a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:var(--white);
+}
+/* //text animantion */
+@keyframes maintextanimation {
+    0%{
+        opacity: 0.7;
+        transform: translate(400px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(20px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes textanimation {
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes sectextanimation {
+    0%{
+        opacity: 0.5;
+        transform: translate(-200px);
+    }
+    30%{
+        opacity: 1;
+        transform: translate(-90px) rotate(360deg);
+   }
+   70%{
+        opacity: 1;
+        transform:translate(-20px) rotate(360deg);
+   }
+   100%{
+        opacity: 1;
+        transform: translate(0) rotate(360deg);
+   }
+}
+   @keyframes btnanimation {
+    0%{
+        opacity: 0.5;
+        transform: translateY(-200px);
+    }
+   
+   100%{
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+
+
+/* about */
+
+#about{
+    background: var(--lightgrad);
+    padding: 15px 30px;
+}
+.ab-title{
+   padding:5px;
+   font-size: 25px;
+   letter-spacing: 3px;
+   display:block;
+   width: 80px;
+   margin:10px auto;
+   position: relative;
+}
+.ab-title::after{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background-color: var(--black);
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.ab-text{
+    margin-top: 15px;
+    text-indent: 28px;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+    
+.sm{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.sm button{
+    font-size: 18px;
+    width: 113px;
+    height: 37px;
+    background: none;
+    border: 2px solid var(--black);
+}
+.sm a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:var(--black);
+}
+
+@media (max-width:1052px) {
+    .h-text{
+        width: 75%;
+    }
+}
+
+@media (max-width:710px) {
+    .h-text{
+        width: 85%;
+    }
+}
+
+@media (max-width:660px) {
+    .h-text{
+        width: 94%;
+    }
+}

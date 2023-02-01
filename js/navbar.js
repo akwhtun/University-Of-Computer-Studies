@@ -1,4 +1,4 @@
-//menu bar
+//nav bar
 let  menubar = document.getElementsByClassName("menu")[0];
 let navlinks = document.getElementsByClassName("nav-links")[0];
 let cross = document.getElementsByClassName("cross")[0];
