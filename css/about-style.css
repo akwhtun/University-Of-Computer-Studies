@@ -1,16 +1,3 @@
-:root{
-    --whitegrad:linear-gradient(to left,#f1f9f8, #c1e9f9);
-    --snowgrad:linear-gradient(to left, #c7c7c7a9, #fffafa );
-    --blurgrad:linear-gradient(144deg, #8d89f366, #9dffdb66);
-    --blackgrad:linear-gradient(144deg, rgba(252, 250, 250, 0.361),rgba(185, 238, 255, 0.616));
-    --lightgrad: linear-gradient(to left,#bfefffaf,#f7f8f3,#bfefffaf);
-    --tranwhite: #f3f8f84e;
-    --black: #002c3e;
-    --hover: #282657a8;
-    --dark: #0f0d35;
-    --blue: #287094;
-    --white:#f0f4ff;
-}
 .about{
     margin-top: 70px;
     padding:0.3em 1em;
