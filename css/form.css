@@ -1,0 +1,73 @@
+.container{
+    width: 100%;
+    height:100vh;
+    background-image: url("../images/ucspkku.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    background: hsla(201, 100%, 6%, 0.6);
+    padding:25px 30px;
+    width: 450px;
+}
+.input-group{
+    padding:5px 20px;
+    margin: auto;
+}
+.input-group label{
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 1.2em;
+    color:var(--snow)
+}
+.input-group input{
+    background :hsla(201, 100%, 91%, 0.091);
+    border:2px solid  hsl(201, 100%, 6%);
+    width: 100%;
+    height: 28px;
+    font-size: 19px;
+    color:snow;
+    padding:4px 0;
+    outline: none;
+    text-indent: 7px;
+}
+.input-group input:focus{
+    border:1px solid hsl(201, 100%, 50%);
+}
+input[type="submit"]{
+    text-transform: uppercase;
+    background: hsla(201, 100%, 50%, 0.1);
+    border:1px solid hsl(201, 100%, 50%) ;
+    color:snow;
+    height: 38px;
+    margin-top: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+background: hsla(201, 100%, 50%,0.3);
+}
+
+input[type="submit"]:focus{
+background: hsla(201, 100%, 50%,0.5);
+}
+
+.acc{
+    padding:4px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.acc span{
+    color:var(--white);
+}
+
+.acc a{
+    text-decoration: none;
+    color:hsl(201, 100%, 50%);
+}

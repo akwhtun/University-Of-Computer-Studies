@@ -7,9 +7,7 @@
     <!-- style links-->
     <!-- nav bar -->
     <link rel="stylesheet" href="../css/navbar.css">
-    <!-- section -->
-    <link rel="stylesheet" href="../css/home-style.css">
-    <!-- footer -->
+    <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/root.css">
     <title>University Of Computer Studies (Pakokku)</title>
@@ -25,7 +23,7 @@
             </div>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./academic.html">Aacdemic</a></li>
+                <li><a href="">Aacdemic</a></li>
                 <li><a href="./department.html">Departments</a></li>
                 <li><a href="">Library</a></li>
                 <li><a href="">Buildings</a></li>
@@ -42,23 +40,25 @@
             <span class="rc"></span>
         </div>
     </nav>
-    <div class="banner">
-        <div class="h-text">
-            <span class="text" data-text="Education is the key to all the">
-                <span class="edu">Education is the key to all the </span> <br> <span class="lock">locked doors of the unknown.</span>
-            </span>
-            <div class="btn">
-                <button class="about-btn"><a href="#about">About</a></button>
+    <div class="container">
+      <div class="form">
+        <form>
+            <div class="input-group">
+                <label for="name">Name</label><br>
+                <input type="text" required>
             </div>
+            <div class="input-group">
+                <label for="email">Email</label><br>
+                <input type="text" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+        <div class="acc">
+            <p><span>Don't Have an account? </span><a href="./register.html"> Register Now</a></p>
         </div>
-    </div>
-
-    <div id="about">
-        <p class="ab-title">About</p>
-        <p class="ab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque obcaecati deserunt neque fugit, accusamus placeat saepe aliquid exercitationem ab, deleniti nobis, reiciendis veniam omnis ratione corrupti laborum explicabo ad alias id? Voluptas molestiae quae quasi inventore fuga, omnis similique blanditiis repellat accusantium aspernatur! Vitae ipsum ea assumenda eligendi error, saepe cumque consequuntur suscipit quos, hic perferendis, pariatur at facere quia sunt officiis voluptates dolore debitis minus! Nulla, quis cupiditate officiis doloremque eos nisi maxime. Accusantium nihil reprehenderit dolor officiis ipsa maxime deserunt aut error mollitia? Excepturi omnis corrupti dolorem nostrum perspiciatis harum consectetur nulla, ducimus quidem similique voluptate voluptatum!</p>
-        <div class="sm">
-            <button><a href="./about.html">See more &raquo;</a></button>
-        </div>
+      </div>
     </div>
 
     <footer>
@@ -78,7 +78,7 @@
                  <h5 class="ql">Qucik Links</h5>
                  <ul>
                      <li><a href="./index.html">Home</a></li>
-                     <li><a href="./academic.html">Aacdemic</a></li>
+                     <li><a href="">Aacdemic</a></li>
                      <li><a href="">Departments</a></li>
                      <li><a href="">Library</a></li>
                      <li><a href="">Buildings</a></li>

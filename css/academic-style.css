@@ -52,7 +52,7 @@ progress{
     align-items: center;
 }
 .percent label{
-    width: 260px;
+    width: 460px;
     margin-left: 10px;
     font-size: 1.4em;
     color:var(--dark);
@@ -168,4 +168,27 @@ label span{
     font-size: 2em;
     color: var(--dark);
     font-weight: 600;
+}
+
+
+/* Responsive Design */
+@media (max-width:990px) {
+    .aca-years li{
+        width:90%;
+    }
+}
+@media (max-width:740px) {
+    .aca-years li{
+        width:99%;
+        padding:5px;
+    }
+    .percent{
+        flex-direction: column;
+    }
+}
+@media (max-width: 584px) {
+    .tot{
+        flex-direction: column;
+        gap:20px;
+    }
 }

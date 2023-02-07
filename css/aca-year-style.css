@@ -126,14 +126,10 @@ margin-top: 100px;
     color: var(--blue);
 }
 .time-lect{
-    width: 90%;
+    width: 95%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10px auto;
-    padding-top:20px;
-    padding-bottom:50px;
-    border-bottom: 1px solid var(--dark);
+    margin: auto;
 }
 .time-tab{
     width: 70%;
@@ -154,12 +150,53 @@ margin-top: 100px;
     left:0%;
 }
 .time-lect .course-tim p{
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: normal;
     line-height: 1.5em;
 }
+.course-tim{
+    margin-left: 5px;
+    width: 700px;
+    display:flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+table{
+    margin-bottom: 15px;
+    transition: 220ms;
+}
+table th{
+    padding:8px;
+}
+table td{
+    padding:8px;
+    font-size: 1em;
+}
 
+/* second year */
+#sys{
+    border:2px solid var(--deeppink);
+    box-shadow: inset 8px 8px 8px lightpink, inset -8px -8px 8px snow;
+}
+/* #sys:hover{
+    box-shadow:  8px 8px 8px lightpink, -8px -8px 8px snow;
+    transform: translate(2px, -5px);
+} */
+#sys th{
+    color:snow;
+    background-color: var(--deeppink);
+}
+#sys td{
+    background: var(--snow);
+    color:var(--deeppink);
+    border:1px solid var(--deeppink);
+}
+.tim-sys{
+    color:var(--deeppink);
+}
 .course-tim a{
+    text-decoration: none;
+    color:var(--black);
     width: 120px;
     margin-top: 5px;
     display: inline-block;
@@ -190,6 +227,7 @@ margin-top: 100px;
     transform: translateY(10px);
 }
 .book{
+    width: 43%;
     margin-top: 20px;
     border-radius: 20px;
     display: flex;
@@ -320,4 +358,80 @@ margin-top: 100px;
 }
 .back img{
     width: 100%;
+}
+
+/* responsive design */
+@media (max-width : 1380px) {
+    .book{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding:20px;
+    }
+    .book-data{
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .time-lect{
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+
+
+@media (max-width: 920px) {
+    .course{
+        flex-direction: column;
+        align-items: center;
+    }  
+    .book{
+        width: 80%;
+    } 
+}
+@media (max-width: 896px) {
+   .v-s{
+    flex-direction: column;
+    align-items: center;
+   }
+   .time-tab{
+    width: 100%;
+    text-align: center;
+   }
+   .time-tab::after{
+    left:50%;
+    transform: translateX(-50%);
+   }
+}
+@media (max-width: 759px) {
+    .academic{
+        padding:30px 0;
+    }
+    .course-tim{
+        padding-left: 30px;
+    }
+    .course{
+        width: 85%;
+        margin: auto;
+        padding:0;
+    }
+    .v-s{
+        padding:0;
+    }
+}
+@media (max-width: 720px) {
+    .course-tim{
+        width: 80%;
+        margin: auto;
+    }
+    .v-s{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width:660px) {
+    .course{
+        width: 97%;
+    }
 }
