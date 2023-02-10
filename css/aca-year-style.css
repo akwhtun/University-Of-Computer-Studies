@@ -14,7 +14,7 @@
     --darklight:#797272;
 }
 body{
-    background: var(--lightgrad);
+    background: var(--new);
 }
 .academic{
 padding:30px;
@@ -36,7 +36,7 @@ margin-top: 100px;
     font-size: 1.2em;
     transition: 250ms;
     border-bottom: 1px solid var(--gray);
-    box-shadow: 6px 6px 10px var(--blue);
+    box-shadow:inset 6px 6px 10px var(--new), inset -6px -6px 10px var(--gnew);
 }
 .all-academic p > span:last-child{
     background: var(--deeporange);
@@ -227,24 +227,22 @@ table td{
     transform: translateY(10px);
 }
 .book{
-    width: 43%;
+    width: 45%;
     margin-top: 20px;
     border-radius: 20px;
     display: flex;
     background: var(--snow);
-    /* background:var(--hsl); */
-    /* backdrop-filter: blur(1rem); */
-    border-radius:5px;
+    border-radius:3px;
     padding: 15px;
-    box-shadow: 4px 4px 15px var(--sky);
+    box-shadow: 7px 7px 15px var(--new),inset -7px -7px 15px var(--newg);
     transition: 280ms;
 }
 .book:hover{
     transform: translate(2px , -6px);
-    box-shadow: 4px 4px 6px var(--gary);
+    box-shadow:  7px 7px 15px var(--newg), -7px -7px 15px var(--new);
 }
 .book .cover{
-    width: 200px;
+    width: 230px;
     height: 300px;
 }
 .cover img{
@@ -252,7 +250,7 @@ table td{
     height: 100%;
 }
 .book-data{
-    padding:10px 20px;
+    padding:10px 15px;
 }
 
 .book-data p{
@@ -268,6 +266,7 @@ table td{
     width: 30px;
 }
 .book-data .img{
+    width: 120px;
     display: flex;
     align-items: center;
 }
