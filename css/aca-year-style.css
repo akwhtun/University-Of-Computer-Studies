@@ -1,13 +1,13 @@
 :root{
-    --blue : #3bcbfa;
+    --anoblue : #006282;
     --deepblue: #047ea7;
     --cyan:#07d7de;
-    --green:#55ff55;
+    --green:#02a902;
     --deepgreen:#2cab2c;
     --pink:#ff4161;
     --deeppink: #b52e44;
     --yellow: #fcf827;
-    --deepyellow:#e6e20c;
+    --deepyellow:#b8b800;
     --orange:#feac29;
     --deeporange:#fe7024;
     --lightdark: #d1d1d1; 
@@ -27,9 +27,11 @@ margin-top: 100px;
 .all-academic.show{
     display: block;
 }
-.all-academic p{
+.all-academic a{
+    width: 90%;
+    text-decoration: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     background-color: var(--white);
     padding: 10px;
@@ -38,20 +40,20 @@ margin-top: 100px;
     border-bottom: 1px solid var(--gray);
     box-shadow:inset 6px 6px 10px var(--new), inset -6px -6px 10px var(--gnew);
 }
-.all-academic p > span:last-child{
-    background: var(--deeporange);
-    color:var(--snow);
+.all-academic a > span{
+    display: block;
+    color:var(--black);
+    font-size: 18px;
     padding:5px;
-    border-radius: 50%;
 }
-.all-academic p:last-child{
+.all-academic a:last-child{
     border-bottom: 0;
 }
-.all-academic p:hover{
+.all-academic a:hover{
     background: var(--sky);
     letter-spacing: 2px;
     font-style: italic;
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 3px 3px 5px var(--white);
 }
 .all-year{
@@ -95,7 +97,7 @@ margin-top: 100px;
 }
 .academic h3::after{
     content: "";
-    width: 220px;
+    width: 290px;
     height: 3px;
     background: var(--dark);
     position: absolute;
@@ -126,7 +128,8 @@ margin-top: 100px;
     color: var(--blue);
 }
 .time-lect{
-    width: 95%;
+    width: 90%;
+    padding: 5px 40px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -173,15 +176,48 @@ table td{
     font-size: 1em;
 }
 
+/* first year junior*/
+#fyj{
+    border:2px solid var(--anoblue);
+    box-shadow: inset 8px 8px 8px lightblue, inset -8px -8px 8px snow;
+}
+#fyj th{
+    background-color: var(--anoblue);
+}
+#fyj td{
+    background: var(--snow);
+    color:#000;
+    border:1px solid var(--anoblue);
+}
+.tim-fyj{
+    color:var(--anoblue);
+}
+/* ///// */
+
+/* first year senior*/
+#fys{
+    border:2px solid var(--deepblue);
+    box-shadow: inset 8px 8px 8px lightblue, inset -8px -8px 8px snow;
+}
+#fys th{
+    color:snow;
+    background-color: var(--deepblue);
+}
+#fys td{
+    background: var(--snow);
+    color:var(--deepblue);
+    border:1px solid var(--deepblue);
+}
+.tim-fys{
+    color:var(--deepblue);
+}
+/* ///// */
+
 /* second year */
 #sys{
     border:2px solid var(--deeppink);
     box-shadow: inset 8px 8px 8px lightpink, inset -8px -8px 8px snow;
 }
-/* #sys:hover{
-    box-shadow:  8px 8px 8px lightpink, -8px -8px 8px snow;
-    transform: translate(2px, -5px);
-} */
 #sys th{
     color:snow;
     background-color: var(--deeppink);
@@ -194,6 +230,65 @@ table td{
 .tim-sys{
     color:var(--deeppink);
 }
+/* ///// */
+
+/* third year cs */
+#tys{
+    border:2px solid var(--green);
+    box-shadow: inset 8px 8px 8px lightgreen, inset -8px -8px 8px snow;
+}
+#tys th{
+    color:snow;
+    background-color: var(--green);
+}
+#tys td{
+    background: var(--snow);
+    color:var(--green);
+    border:1px solid var(--green);
+}
+.tim-tys{
+    color:var(--green);
+}
+/* ///// */
+
+/* third year ct */
+#tyt{
+    border:2px solid var(--deepgreen);
+    box-shadow: inset 8px 8px 8px lightgreen, inset -8px -8px 8px snow;
+}
+#tyt th{
+    color:snow;
+    background-color: var(--deepgreen);
+}
+#tyt td{
+    background: var(--snow);
+    color:var(--deepgreen);
+    border:1px solid var(--deepgreen);
+}
+.tim-tyt{
+    color:var(--deepgreen);
+}
+/* ///// */
+
+/* fourth year cs */
+#foys{
+    border:2px solid var(--deepyellow);
+    box-shadow: inset 8px 8px 8px lightyellow, inset -8px -8px 8px snow;
+}
+#foys th{
+    color:snow;
+    background-color: var(--deepyellow);
+}
+#foys td{
+    background: var(--snow);
+    color:var(--deepyellow);
+    border:1px solid var(--deepyellow);
+}
+.tim-foys{
+    color:var(--deepyellow);
+}
+/* ///// */
+
 .course-tim a{
     text-decoration: none;
     color:var(--black);
@@ -430,6 +525,14 @@ table td{
     }
 }
 @media (max-width:660px) {
+    .table{
+        width: 470px;
+        margin:10px auto;
+    }
+    #sys:hover{
+        transform: none;
+        box-shadow: none;
+    }
     .course{
         width: 97%;
     }
