@@ -499,8 +499,23 @@ table td{
    }
 }
 @media (max-width: 759px) {
+    .time-lect{
+        /* width: 200px; */
+        background-color: yellow;
+    }
+    .table{
+        background-color: red;
+        width: 400px;
+        margin: auto;
+    }
+    table{
+        width: 100%;
+        margin: auto;
+        background-color: black;
+    }
     .academic{
         padding:30px 0;
+        background-color: red;
     }
     .course-tim{
         padding-left: 30px;
@@ -509,6 +524,7 @@ table td{
         width: 85%;
         margin: auto;
         padding:0;
+        background-color: lime;
     }
     .v-s{
         padding:0;

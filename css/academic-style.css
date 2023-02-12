@@ -49,6 +49,7 @@ progress{
 }
 .percent{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .percent label{
@@ -147,7 +148,7 @@ label span{
 
 .tot{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 70%;
     margin: 15px auto;
@@ -184,6 +185,7 @@ label span{
     }
     .percent{
         flex-direction: column;
+        text-align: center;
     }
 }
 @media (max-width: 584px) {
