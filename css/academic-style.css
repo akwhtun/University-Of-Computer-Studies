@@ -95,10 +95,11 @@ label span{
 .des p{
     color: var(--dark);
     text-indent: 15px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.5em;
     padding:15px 8px;
     margin: 8px;
+    text-align: center;
 }
 .des span{
     color: var(--deepblue);
@@ -173,6 +174,12 @@ label span{
 
 
 /* Responsive Design */
+@media (max-width:1070px) {
+    .progress label{
+        width: 400px;
+    }
+}
+
 @media (max-width:990px) {
     .aca-years li{
         width:90%;

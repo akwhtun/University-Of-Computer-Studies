@@ -82,6 +82,9 @@ body{
 }
 
 @media (max-width: 700px) {
+    .data{
+        flex-direction: column;
+    }
     .back-img{
         margin-left: 0;
         margin-top: 5px;
