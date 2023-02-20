@@ -62,18 +62,6 @@
         text-indent: 25px;
         color:var(--dark);
     }
-    .lib-reg{
-        display: block;
-        text-decoration: none;
-        width: 107px;
-        height: 33px;
-        line-height: 33px;
-        padding-right: 12px;
-        background:dodgerblue;
-        margin: 15px auto;
-        color:var(--snow);
-        border-radius: 5px;
-    }
     .t-book{
         font-size: 1.7em;
         display: flex;
@@ -90,8 +78,8 @@
         align-items: center;
     }
     .t-book span{
-        width: 150px;
         display: inline-block;
+        width: 190px;
         padding:5px 20px;
     }
     .b-img{

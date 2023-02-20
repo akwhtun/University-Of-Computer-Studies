@@ -172,6 +172,32 @@ label span{
     font-weight: 600;
 }
 
+.counter{
+    display: inline-block;
+    width: 50px;
+}
+
+.tab{
+    width: 750px;
+    margin:20px auto;
+    overflow-x:auto ;
+   }
+   .tab th{
+    padding:7px;
+    background-color: #181a1b;
+    color: snow;
+   }
+   .tab td, .tab th{
+    padding:10px;
+    font-size: 1.1em;
+    text-align: center;
+   }
+   tr:nth-child(2n-1){
+    background-color: #d9dcde;
+   }
+   .last{
+    font-weight: bold;
+   }
 
 /* Responsive Design */
 @media (max-width:1070px) {
@@ -183,6 +209,9 @@ label span{
 @media (max-width:990px) {
     .aca-years li{
         width:90%;
+    }
+    .tab{
+        width: 95%;
     }
 }
 @media (max-width:740px) {

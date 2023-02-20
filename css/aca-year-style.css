@@ -170,7 +170,9 @@ table{
 }
 table th{
     padding:8px;
+    color: #f8f2f2;
 }
+
 table td{
     padding:8px;
     font-size: 1em;
@@ -178,16 +180,10 @@ table td{
 
 /* first year junior*/
 #fyj{
-    border:2px solid var(--anoblue);
     box-shadow: inset 8px 8px 8px lightblue, inset -8px -8px 8px snow;
 }
 #fyj th{
     background-color: var(--anoblue);
-}
-#fyj td{
-    background: var(--snow);
-    color:#000;
-    border:1px solid var(--anoblue);
 }
 .tim-fyj{
     color:var(--anoblue);
@@ -196,7 +192,6 @@ table td{
 
 /* first year senior*/
 #fys{
-    border:2px solid var(--deepblue);
     box-shadow: inset 8px 8px 8px lightblue, inset -8px -8px 8px snow;
 }
 #fys th{
@@ -206,7 +201,6 @@ table td{
 #fys td{
     background: var(--snow);
     color:var(--deepblue);
-    border:1px solid var(--deepblue);
 }
 .tim-fys{
     color:var(--deepblue);
@@ -215,7 +209,6 @@ table td{
 
 /* second year */
 #sys{
-    border:2px solid var(--deeppink);
     box-shadow: inset 8px 8px 8px lightpink, inset -8px -8px 8px snow;
 }
 #sys th{
@@ -225,7 +218,6 @@ table td{
 #sys td{
     background: var(--snow);
     color:var(--deeppink);
-    border:1px solid var(--deeppink);
 }
 .tim-sys{
     color:var(--deeppink);
@@ -234,7 +226,6 @@ table td{
 
 /* third year cs */
 #tys{
-    border:2px solid var(--green);
     box-shadow: inset 8px 8px 8px lightgreen, inset -8px -8px 8px snow;
 }
 #tys th{
@@ -244,7 +235,6 @@ table td{
 #tys td{
     background: var(--snow);
     color:var(--green);
-    border:1px solid var(--green);
 }
 .tim-tys{
     color:var(--green);
@@ -253,7 +243,6 @@ table td{
 
 /* third year ct */
 #tyt{
-    border:2px solid var(--deepgreen);
     box-shadow: inset 8px 8px 8px lightgreen, inset -8px -8px 8px snow;
 }
 #tyt th{
@@ -263,7 +252,6 @@ table td{
 #tyt td{
     background: var(--snow);
     color:var(--deepgreen);
-    border:1px solid var(--deepgreen);
 }
 .tim-tyt{
     color:var(--deepgreen);
@@ -272,7 +260,6 @@ table td{
 
 /* fourth year cs */
 #foys{
-    border:2px solid var(--deepyellow);
     box-shadow: inset 8px 8px 8px lightyellow, inset -8px -8px 8px snow;
 }
 #foys th{
@@ -282,13 +269,23 @@ table td{
 #foys td{
     background: var(--snow);
     color:var(--deepyellow);
-    border:1px solid var(--deepyellow);
 }
 .tim-foys{
     color:var(--deepyellow);
 }
-/* ///// */
 
+
+#fyj td, #fys td, #sys td, #tys td, #tyh td, #fys td{
+    padding:8px;
+    background: #d5d9dc;
+    font-size: 1em;
+}
+#fyj .lun, #fys .lun, #sys .lun, #tys .lun, #tyh .lun, #fys .lun{
+    background-color: #cbced1;
+    color: black;
+    border:1px solid #d1d1d1;
+}
+/* ///// */
 .course-tim a{
     text-decoration: none;
     color:var(--black);

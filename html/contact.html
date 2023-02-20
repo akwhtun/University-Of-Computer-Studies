@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style links-->
+    <!-- style links -->
     <!-- nav bar -->
     <link rel="stylesheet" href="../css/navbar.css">
-    <!-- section -->
-    <link rel="stylesheet" href="../css/home-style.css">
+
+    <!-- about -->
+    <link rel="stylesheet" href="../css/contact.css">
+
     <!-- footer -->
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/root.css">
-    <title>University Of Computer Studies (Pakokku)</title>
+    <title>Contact Us</title>
 </head>
 <body>
+    
     <nav>
         <div class="logo">
                 <img src="../images/logo.png" alt="logo">
@@ -24,7 +27,7 @@
                 <img src="../images/logo.png" alt="logo">
             </div>
             <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./academic2.html">Aacdemic</a></li>
                 <li><a href="./department.html">Departments</a></li>
                 <li><a href="./library.html">Library</a></li>
@@ -43,52 +46,35 @@
             <span class="rc"></span>
         </div>
     </nav>
-    <div class="banner">
-        <div class="h-text">
-            <span class="text" data-text="Education is the key to all the">
-                <span class="edu">Education is the key to all the </span> <br> <span class="lock">locked doors of the unknown.</span>
-            </span>
-            <div class="btn">
-                <button class="about-btn"><a href="#about">About</a></button>
+   
+    <div class="contact-container">
+        <div class="tit">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="../images/ucspkku.jpg" alt="">
             </div>
+            <form action="">
+                <div class="input-group">
+                    <label for="name">name</label> <br>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Subject</label> <br>
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input-group">
+                   <a href="">Submit</a>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div class="tot">
-        <div>
-            <img src="../images/crown.png" alt="">
-            <span class="counter"><strong>11</strong> <br> YEARS</span>
-        </div>
-        <div>
-            <img src="../images/graduate.png" alt="">
-            <span class="counter"><strong>1450</strong> <br> GRADUATES</span>
-        </div>
-    </div>
-
-    <div id="about">
-        <p class="ab-title">About</p>
-        <p class="ab-text">
-            University of Computer Studies (Pakokku) is a public undergraduate university located in Pakokku, Magway Region, Myanmar. Students study various computer disciplines, including hardware, networking, programming, imaging, and artificial intelligence. Its uniform is white for upper wear and light blue for longyi.
-        </p>
-        <div class="sm">
-            <button><a href="./about.html">See more &raquo;</a></button>
-        </div>
-    </div>
-
-    <div id="library">
-        <div class="lib">
-            <img src="../images/Library.jpg">
-        </div>
-        <div class="lib-des">
-            <p class="lib-text">
-                One <span style="color:#a400a4">B</span><span style="color: #1c5df5;">O</span><span style="color:#ff4500">O</span><span style="color:#00ff00">K</span> can change your <span style="color: #ff4500;">L</span><span style="color:#ffff17">I</span><span style="color:#00ff00">F</span><span style="color:#1c5df5">E</span>
-            </p>
-            <p class="button">
-               <a href="./library.html" class="rn">Explore Now &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+    
     <footer>
         <div class="row">
              <div class="col-4">
@@ -131,10 +117,9 @@
          2023 &copy; All right reserved.
         </div>
      </footer>
- 
-    <!-- js link -->
+
+      <!-- js link -->
     <!-- nav bar -->
     <script src="../js/navbar.js"></script>
-    <script src="../js/counter.js"></script>
 </body>
 </html>

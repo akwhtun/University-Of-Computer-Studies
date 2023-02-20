@@ -152,6 +152,7 @@
     font-size: 2em;
     color: var(--dark);
     font-weight: bold;
+    width: 320px;
 }
 .tot span{
     display: inline-block;
