@@ -6,5 +6,5 @@
 
 home,about,departments,library,canteen,academic
 
-`**Languages**`
-`*HTML CSS JavaScript*`
+'**Languages**'
+'*HTML CSS JavaScript*'
