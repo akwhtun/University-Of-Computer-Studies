@@ -14,3 +14,10 @@ cross.addEventListener("click", () => {
     menubar.classList.toggle("menuToggle");
     cross.classList.toggle("menuToggle");
 })
+
+//redirect
+let logo = document.getElementsByClassName("logo")[0];
+logo.addEventListener("click", () => {
+    window.location.href="index.html";
+})
+

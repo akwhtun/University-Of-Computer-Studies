@@ -28,6 +28,7 @@ nav{
 .logo{
    width: 90px;
 height : 60px;
+cursor:pointer;
 }
 .logo img{
 width:100%;

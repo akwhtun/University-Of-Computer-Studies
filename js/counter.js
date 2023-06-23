@@ -24,7 +24,7 @@ window.onscroll = () => {
             if(countStart1 > range1 && countStart2 > range2){
                 stop();
             }
-        }, 500);
+        }, 300);
     
         function stop(){
             clearInterval(start);
