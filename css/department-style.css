@@ -172,7 +172,8 @@
 }
 .data li > span{
     width: 47%;
-    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .data li span:first-child{
     margin-left: 15px;
@@ -246,13 +247,13 @@
 
 @media (max-width : 840px) {
     .lecturers h5::after{
-        width: 430px;
+        width: 330px;
     }
     .lecturer{
         width: 90%;
     }
     .data ul li{
-        width: 390px;
+        width:280px;
     }
     .data {
         margin: 0;

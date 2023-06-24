@@ -121,6 +121,9 @@ body{
     }
 }
 @media (max-width: 980px) {
+    #section::after{
+        width: 300px;
+    }
     .box{
         width: 46%;
         margin-top:15px;

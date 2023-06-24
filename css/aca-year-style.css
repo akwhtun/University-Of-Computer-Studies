@@ -526,7 +526,7 @@ table td{
 }
 @media (max-width:660px) {
     .table{
-        width: 450px;
+        width: 350px;
         margin:10px auto;
     }
     #sys:hover{

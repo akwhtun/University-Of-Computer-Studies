@@ -158,6 +158,7 @@ height:100%;
     }
     .nav-links li{
         width: 91%;
+        margin-left: 6px;
     }
     .nav-links a{
         color:var(--dark);
